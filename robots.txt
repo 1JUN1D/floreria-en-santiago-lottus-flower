@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://florerialotus.dondeseria.com/sitemap.xml

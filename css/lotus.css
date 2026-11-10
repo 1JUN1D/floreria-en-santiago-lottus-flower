@@ -1,0 +1,482 @@
+/* =====================================================
+   LOTUS FLOWER — Capa de marca (vinotinto y dorado)
+   Solo la cargan index.html y catalogo.html (<body class="lotus">).
+   Las demás páginas siguen con styles.css sin cambios.
+   ===================================================== */
+
+body.lotus {
+    --lf-vino: #5B0E22;
+    --lf-vino-2: #7D1B36;
+    --lf-vino-hondo: #3A0815;
+    --lf-tinta: #2A0A12;
+    --lf-oro: #C9A24D;
+    --lf-oro-claro: #E6CC8A;
+    --lf-oro-osc: #8E6C24;
+    --lf-petalo: #F8F0EE;
+    --lf-marfil: #FFFBF8;
+    --lf-texto: #5E4A50;
+    --lf-linea: rgba(201, 162, 77, 0.38);
+    --lf-petal-clip: polygon(0.0% 100.0%, 0.0% 46.0%, 0.5% 40.7%, 1.9% 35.9%, 4.2% 31.7%, 7.1% 27.8%, 10.6% 24.3%, 14.6% 21.1%, 19.0% 18.1%, 23.6% 15.4%, 28.3% 12.8%, 33.1% 10.3%, 37.7% 7.8%, 42.2% 5.3%, 46.3% 2.7%, 50.0% 0.0%, 53.7% 2.7%, 57.8% 5.3%, 62.3% 7.8%, 66.9% 10.3%, 71.7% 12.8%, 76.4% 15.4%, 81.0% 18.1%, 85.4% 21.1%, 89.4% 24.3%, 92.9% 27.8%, 95.8% 31.7%, 98.1% 35.9%, 99.5% 40.7%, 100.0% 46.0%, 100.0% 100.0%);
+    --lf-glyph: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 160 36' fill='none' stroke='%23C9A24D' stroke-width='1.3' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M10 24h42M108 24h42'/%3E%3Cpath d='M80 31c-10 0-18-4-22-11 9 0 16 4 22 11z'/%3E%3Cpath d='M80 31c10 0 18-4 22-11-9 0-16 4-22 11z'/%3E%3Cpath d='M80 31c-5-4-8-10-7-17 5 3 7 10 7 17z'/%3E%3Cpath d='M80 31c5-4 8-10 7-17-5 3-7 10-7 17z'/%3E%3Cpath d='M80 3c5 6 6 16 0 28-6-12-5-22 0-28z'/%3E%3C/svg%3E");
+    --lf-lotus-line: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='80 110 352 310' fill='none' stroke='%23E6CC8A' stroke-width='1.6' stroke-linejoin='round' stroke-linecap='round'%3E%3Cpath d='M256 338C176 336 118 296 92 238c68-6 130 32 164 100z'/%3E%3Cpath d='M256 338c80-2 138-42 164-100-68-6-130 32-164 100z'/%3E%3Cpath d='M256 336c-58-30-90-92-84-160 52 24 82 86 84 160z'/%3E%3Cpath d='M256 336c58-30 90-92 84-160-52 24-82 86-84 160z'/%3E%3Cpath d='M256 128c46 52 50 142 0 208-50-66-46-156 0-208z'/%3E%3Cpath d='M150 370q106 34 212 0M196 398q60 20 120 0'/%3E%3C/svg%3E");
+    --lf-petal-line: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M.5 99.5V46C.5 20 34 13 50 .6 66 13 99.5 20 99.5 46v53.5z' fill='none' stroke='%23C9A24D' stroke-width='1.5' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+
+    /* Variables heredadas de styles.css, re-mapeadas a la marca */
+    --color-primary: var(--lf-vino);
+    --color-secondary: var(--lf-vino-2);
+    --color-accent: var(--lf-oro);
+    --color-dark: var(--lf-tinta);
+    --color-text: #3B2A2F;
+    --color-text-light: var(--lf-texto);
+    --gradient-primary: linear-gradient(135deg, #5B0E22 0%, #7D1B36 100%);
+    --gradient-accent: linear-gradient(135deg, #C9A24D 0%, #E6CC8A 100%);
+    --gradient-dark: linear-gradient(160deg, #3A0815 0%, #5B0E22 100%);
+    --font-heading: 'Bodoni Moda', 'Didot', Georgia, serif;
+    --font-body: 'Jost', 'Avenir Next', system-ui, sans-serif;
+
+    background: var(--lf-marfil);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.65;
+}
+
+body.lotus h1,
+body.lotus h2,
+body.lotus h3 {
+    font-family: var(--font-heading);
+    font-optical-sizing: auto;
+}
+
+body.lotus ::selection { background: var(--lf-oro-claro); color: var(--lf-vino-hondo); }
+
+body.lotus a:focus-visible,
+body.lotus button:focus-visible,
+body.lotus input:focus-visible {
+    outline: 2px solid var(--lf-oro);
+    outline-offset: 3px;
+}
+
+/* ---------- Botones ---------- */
+body.lotus .btn {
+    border-radius: 3px;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    box-shadow: none;
+    padding: 1rem 1.9rem;
+}
+body.lotus .btn-primary {
+    background: linear-gradient(135deg, #E6CC8A 0%, #C9A24D 100%);
+    color: var(--lf-vino-hondo);
+}
+body.lotus .btn-primary:hover {
+    transform: none;
+    box-shadow: 0 0 0 4px rgba(230, 204, 138, 0.25);
+}
+body.lotus .btn-whatsapp {
+    background: transparent;
+    color: #FFF6F0;
+    border: 1px solid rgba(255, 246, 240, 0.45);
+}
+body.lotus .btn-whatsapp:hover {
+    background: rgba(255, 246, 240, 0.08);
+    border-color: var(--lf-oro-claro);
+    transform: none;
+    box-shadow: none;
+}
+body.lotus .btn-secondary {
+    background: transparent;
+    color: var(--lf-vino);
+    border: 1px solid var(--lf-vino);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+}
+body.lotus .btn-secondary:hover {
+    background: var(--lf-vino);
+    color: #FFF6F0;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ---------- Navbar (componente) ---------- */
+body.lotus .navbar {
+    background: rgba(255, 251, 248, 0.96);
+    box-shadow: none;
+    border-bottom: 1px solid var(--lf-linea);
+}
+body.lotus .navbar-scrolled { box-shadow: 0 6px 24px rgba(58, 8, 21, 0.10); }
+body.lotus .logo-circle {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px var(--lf-oro);
+}
+body.lotus .logo-circle:hover { transform: scale(1.04); }
+body.lotus .logo-circle img { width: 60px; height: 60px; }
+body.lotus .logo-text .brand-name {
+    font-family: var(--font-heading);
+    color: var(--lf-vino);
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
+}
+body.lotus .logo-text .brand-tagline {
+    text-transform: none;
+    letter-spacing: 0.04em;
+    color: var(--lf-oro-osc);
+    font-size: 0.82rem;
+    font-weight: 400;
+}
+body.lotus .navbar-menu a { color: var(--lf-tinta); }
+body.lotus .navbar-menu a::after { height: 1px; background: var(--lf-oro); }
+body.lotus .navbar-menu a:hover { color: var(--lf-vino); }
+body.lotus .navbar-phone {
+    background: transparent;
+    border: 1px solid rgba(91, 14, 34, 0.25);
+    border-radius: 3px;
+    color: var(--lf-vino);
+    font-weight: 500;
+}
+body.lotus .navbar-phone:hover { background: var(--lf-vino); color: #FFF6F0; transform: none; }
+body.lotus .navbar-whatsapp {
+    background: var(--lf-vino);
+    color: #FFF6F0;
+    border-radius: 3px;
+    box-shadow: none;
+    font-weight: 500;
+}
+body.lotus .navbar-whatsapp:hover { background: var(--lf-vino-2); transform: none; box-shadow: none; }
+body.lotus .hamburger span { background: var(--lf-vino); }
+@media (max-width: 768px) {
+    body.lotus .navbar-menu { background: var(--lf-marfil); border-bottom: 1px solid var(--lf-linea); }
+    body.lotus .logo-circle img { width: 50px; height: 50px; }
+}
+
+/* ---------- Hero ---------- */
+body.lotus .hero-section {
+    background: radial-gradient(120% 95% at 82% 12%, #7D1B36 0%, #5B0E22 40%, #3A0815 100%);
+    color: #FFF6F0;
+}
+body.lotus .hero-section::before {
+    top: auto;
+    right: auto;
+    left: -150px;
+    bottom: -140px;
+    width: 720px;
+    height: 640px;
+    border-radius: 0;
+    background: var(--lf-lotus-line) center / contain no-repeat;
+    opacity: 0.13;
+}
+body.lotus .hero-section::after { display: none; }
+body.lotus .hero-content { gap: 72px; }
+body.lotus .breadcrumb { color: rgba(255, 246, 240, 0.6); }
+body.lotus .breadcrumb a { color: var(--lf-oro-claro); }
+body.lotus .hero-left h1 {
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    color: #FFF6F0;
+    font-size: clamp(2.8rem, 5.6vw, 5rem);
+    font-weight: 500;
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.6rem;
+}
+body.lotus .hero-description {
+    color: rgba(255, 246, 240, 0.82);
+    font-size: 1.15rem;
+    max-width: 34em;
+    line-height: 1.75;
+}
+
+/* Video del hero: marco en forma de pétalo de loto */
+body.lotus .hero-right {
+    position: relative;
+    justify-self: center;
+    width: min(100%, 440px);
+}
+body.lotus .hero-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translate(20px, -20px);
+    background: var(--lf-petal-line) center / 100% 100% no-repeat;
+    pointer-events: none;
+}
+body.lotus .hero-right::after {
+    content: '';
+    position: absolute;
+    top: -52px;
+    left: calc(50% + 20px);
+    width: 7px;
+    height: 7px;
+    margin-left: -3.5px;
+    border-radius: 50%;
+    background: var(--lf-oro);
+}
+body.lotus .video-container {
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 4 / 5;
+    border-radius: 0;
+    box-shadow: none;
+    background: var(--lf-vino-hondo);
+    clip-path: var(--lf-petal-clip);
+    animation: lfRise 1.1s cubic-bezier(.2, .7, .2, 1) 0.15s both;
+}
+body.lotus .hero-video { object-position: 38% center; }
+body.lotus .video-overlay {
+    background: linear-gradient(180deg, rgba(58, 8, 21, 0) 55%, rgba(58, 8, 21, 0.38) 100%);
+}
+@keyframes lfRise {
+    from { opacity: 0; transform: translateY(28px); }
+    to   { opacity: 1; transform: none; }
+}
+
+/* ---------- Fotos de clientes ---------- */
+body.lotus .testimonials-carousel {
+    background: var(--lf-petalo);
+    padding: 56px 0;
+    border-bottom: 1px solid var(--lf-linea);
+}
+body.lotus .carousel-track { gap: 1.75rem; }
+body.lotus .testimonial-card {
+    flex: 0 0 228px;
+    height: 292px;
+    padding: 6px;
+    background: var(--lf-marfil);
+    backdrop-filter: none;
+    border: 1px solid rgba(201, 162, 77, 0.7);
+    border-radius: 114px 114px 4px 4px;
+}
+body.lotus .testimonial-card img { border-radius: 108px 108px 2px 2px; }
+body.lotus .testimonial-card:hover { transform: none; border-color: var(--lf-vino); }
+
+/* ---------- Encabezados de sección ---------- */
+body.lotus .section-header h2,
+body.lotus .service-areas-header h2,
+body.lotus .contact-header h2 {
+    font-family: var(--font-heading);
+    color: var(--lf-vino);
+    font-weight: 500;
+    font-size: clamp(2.2rem, 4vw, 3.1rem);
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+}
+body.lotus .section-header h2::after,
+body.lotus .service-areas-header h2::after,
+body.lotus .contact-header h2::after {
+    content: '';
+    display: block;
+    width: 132px;
+    height: 30px;
+    margin: 1rem auto 0;
+    background: var(--lf-glyph) center / contain no-repeat;
+}
+body.lotus .section-header p,
+body.lotus .service-areas-header p,
+body.lotus .contact-header p {
+    color: var(--lf-texto);
+    font-weight: 400;
+    font-size: 1.1rem;
+    max-width: 38em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Servicios (tarjetas con arco) ---------- */
+body.lotus .categories-section { background: var(--lf-marfil); padding: 110px 0; }
+body.lotus .categories-grid { gap: 3.5rem 2.5rem; }
+body.lotus .category-card {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    overflow: visible;
+}
+body.lotus .category-card:hover { transform: none; box-shadow: none; }
+body.lotus .category-image {
+    height: 300px;
+    border-radius: 50% 50% 4px 4px / 34% 34% 4px 4px;
+    outline: 1px solid var(--lf-linea);
+    outline-offset: 6px;
+}
+body.lotus .category-card:hover .category-image img { transform: scale(1.04); }
+body.lotus .category-content { padding: 1.75rem 0.25rem 0; }
+body.lotus .category-content h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--lf-tinta);
+    letter-spacing: -0.01em;
+    margin-bottom: 0.75rem;
+}
+body.lotus .category-content p {
+    color: var(--lf-texto);
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 34em;
+}
+
+/* ---------- Zonas de servicio (componente) ---------- */
+body.lotus .service-areas-section {
+    background: var(--lf-petalo);
+    border-top: 1px solid var(--lf-linea);
+    border-bottom: 1px solid var(--lf-linea);
+}
+body.lotus .city-name {
+    font-family: var(--font-heading);
+    color: var(--lf-vino);
+    font-weight: 500;
+}
+body.lotus .locality-item {
+    background: var(--lf-marfil);
+    border: 1px solid var(--lf-linea);
+    border-radius: 4px;
+    box-shadow: none;
+}
+body.lotus .locality-item:hover {
+    transform: none;
+    border-color: var(--lf-oro);
+    box-shadow: 0 10px 24px rgba(91, 14, 34, 0.08);
+}
+body.lotus .locality-icon {
+    width: 46px;
+    height: 46px;
+    font-size: 1.35rem;
+    background: var(--lf-vino);
+    box-shadow: 0 0 0 1px var(--lf-marfil), 0 0 0 2px var(--lf-oro);
+}
+body.lotus .locality-info h3 {
+    font-family: var(--font-heading);
+    color: var(--lf-tinta);
+    font-weight: 600;
+}
+body.lotus .locality-info p { color: var(--lf-texto); }
+body.lotus .coverage-badge {
+    background: transparent;
+    color: var(--lf-vino);
+    border: 1px solid var(--lf-oro);
+    border-radius: 3px;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+/* ---------- CTA ---------- */
+body.lotus .cta-section {
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(110% 120% at 50% 0%, #7D1B36 0%, #5B0E22 45%, #3A0815 100%);
+    padding: 110px 0;
+}
+body.lotus .cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 22px;
+    border: 1px solid rgba(230, 204, 138, 0.45);
+    pointer-events: none;
+}
+body.lotus .cta-content { position: relative; }
+body.lotus .cta-content h2 {
+    color: #FFF6F0;
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.015em;
+    line-height: 1.12;
+    max-width: 18em;
+    margin-left: auto;
+    margin-right: auto;
+}
+body.lotus .cta-content p { color: rgba(255, 246, 240, 0.8); }
+body.lotus .cta-section .btn-primary {
+    background: linear-gradient(135deg, #E6CC8A 0%, #C9A24D 100%);
+    color: var(--lf-vino-hondo);
+}
+body.lotus .cta-section .btn-primary:hover {
+    background: var(--lf-oro-claro);
+    color: var(--lf-vino-hondo);
+}
+
+/* ---------- Contacto (componente) ---------- */
+body.lotus .contact-info-section { background: var(--lf-marfil); }
+body.lotus .contact-card {
+    background: #fff;
+    border: 1px solid var(--lf-linea);
+    border-left: 3px solid var(--lf-vino);
+    border-radius: 4px;
+    box-shadow: none;
+}
+body.lotus .contact-card:hover { transform: none; box-shadow: 0 10px 24px rgba(91, 14, 34, 0.08); }
+body.lotus .contact-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 1.5rem;
+    background: var(--lf-petalo);
+    border: 1px solid rgba(201, 162, 77, 0.6);
+    border-radius: 50%;
+    box-shadow: none;
+}
+body.lotus .contact-card-header h3 {
+    font-family: var(--font-heading);
+    color: var(--lf-tinta);
+    font-weight: 500;
+}
+body.lotus .contact-card-content { color: var(--lf-texto); }
+body.lotus .contact-card-content a { color: var(--lf-vino); }
+body.lotus .contact-card-content a:hover { color: var(--lf-oro-osc); }
+body.lotus .contact-btn { border-radius: 3px; box-shadow: none; font-weight: 500; }
+body.lotus .contact-btn-primary { background: var(--lf-vino); }
+body.lotus .contact-btn-primary:hover { background: var(--lf-vino-2); transform: none; box-shadow: none; }
+body.lotus .contact-btn-whatsapp { background: var(--lf-oro); color: var(--lf-vino-hondo); }
+body.lotus .contact-btn-whatsapp:hover { background: var(--lf-oro-claro); transform: none; box-shadow: none; }
+body.lotus .map-container {
+    border-radius: 50% 50% 4px 4px / 16% 16% 4px 4px;
+    box-shadow: none;
+    outline: 1px solid var(--lf-linea);
+    outline-offset: 6px;
+}
+
+/* ---------- Footer (componente) ---------- */
+body.lotus .footer {
+    background: var(--lf-vino-hondo);
+    margin-top: 0;
+    border-top: 1px solid rgba(201, 162, 77, 0.5);
+}
+body.lotus .footer-section h3 {
+    font-family: var(--font-heading);
+    color: var(--lf-oro-claro);
+    font-weight: 500;
+}
+body.lotus .footer-about p,
+body.lotus .footer-links a,
+body.lotus .footer-contact-item { color: rgba(255, 246, 240, 0.72); }
+body.lotus .footer-links a:hover { color: var(--lf-oro-claro); }
+body.lotus .footer-contact-item .icon { color: var(--lf-oro); }
+body.lotus .social-link {
+    background: transparent;
+    border: 1px solid rgba(201, 162, 77, 0.5);
+}
+body.lotus .social-link:hover { background: rgba(201, 162, 77, 0.18); }
+body.lotus .footer-bottom { border-top-color: rgba(201, 162, 77, 0.25); }
+body.lotus .footer-bottom p { color: rgba(255, 246, 240, 0.5); }
+body.lotus .footer-bottom a { color: var(--lf-oro-claro); }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+    body.lotus .hero-content { gap: 56px; }
+    body.lotus .hero-right { width: min(84%, 400px); margin-top: 40px; }
+}
+@media (max-width: 768px) {
+    body.lotus .categories-section { padding: 80px 0; }
+    body.lotus .category-image { height: 260px; }
+    body.lotus .cta-section { padding: 84px 0; }
+    body.lotus .cta-section::before { inset: 12px; }
+}
+@media (max-width: 480px) {
+    body.lotus .hero-section { padding-top: 132px; }
+    body.lotus .hero-right::before { transform: translate(12px, -12px); }
+    body.lotus .hero-right::after { left: calc(50% + 12px); top: -40px; }
+    body.lotus .testimonial-card { flex: 0 0 188px; height: 240px; border-radius: 94px 94px 4px 4px; }
+    body.lotus .testimonial-card img { border-radius: 88px 88px 2px 2px; }
+    body.lotus .categories-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.lotus .video-container { animation: none; }
+    body.lotus .carousel-track { animation-duration: 120s; }
+}
