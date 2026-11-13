@@ -9,7 +9,7 @@ const products = [
         "id": 1,
         "code": "001",
         "name": "Pasión Encendida",
-        "price": 24000,
+        "price": 30000,
         "image": "../assets/1.webp",
         "description": "Ramo de rosas rojas con claveles y alstroemerias en papel blanco.",
         "categories": [
@@ -23,7 +23,7 @@ const products = [
         "id": 2,
         "code": "002",
         "name": "Alegría de Colores",
-        "price": 18000,
+        "price": 23000,
         "image": "../assets/2.webp",
         "description": "Ramo mixto con girasol, gerbera, crisantemos lila, claveles y lilium en papel con borde dorado.",
         "categories": [
@@ -38,7 +38,7 @@ const products = [
         "id": 3,
         "code": "003",
         "name": "Susurro de Lilium",
-        "price": 21000,
+        "price": 26000,
         "image": "../assets/3.webp",
         "description": "Ramo de lilium rosados, blanco y naranjo con gypsophila en papel rosado.",
         "categories": [
@@ -51,7 +51,7 @@ const products = [
         "id": 4,
         "code": "004",
         "name": "Sol de Medianoche",
-        "price": 24000,
+        "price": 30000,
         "image": "../assets/4.webp",
         "description": "Ramo de girasoles con gypsophila en papel negro.",
         "categories": [
@@ -64,7 +64,7 @@ const products = [
         "id": 5,
         "code": "005",
         "name": "Ternura de Lilium",
-        "price": 21000,
+        "price": 26000,
         "image": "../assets/5.webp",
         "description": "Ramo de lilium rosados y blancos en papel rosado.",
         "categories": [
@@ -77,7 +77,7 @@ const products = [
         "id": 6,
         "code": "006",
         "name": "Mil Sonrisas",
-        "price": 32000,
+        "price": 40000,
         "image": "../assets/6.webp",
         "description": "Ramo mixto con gerberas, rosas, claveles y lilium en papel rosado.",
         "categories": [
@@ -92,7 +92,7 @@ const products = [
         "id": 7,
         "code": "007",
         "name": "Constelación de Girasoles",
-        "price": 40000,
+        "price": 50000,
         "image": "../assets/7.webp",
         "description": "Gran ramo de girasoles en papel negro con líneas blancas.",
         "categories": [
@@ -105,7 +105,7 @@ const products = [
         "id": 8,
         "code": "008",
         "name": "Amor Infinito",
-        "price": 180000,
+        "price": 225000,
         "image": "../assets/8.webp",
         "description": "Gran ramo de rosas rojas en papel negro con cinta de satín.",
         "categories": [
@@ -120,7 +120,7 @@ const products = [
         "id": 9,
         "code": "009",
         "name": "Jardín Coral",
-        "price": 40000,
+        "price": 50000,
         "image": "../assets/9.webp",
         "description": "Ramo de gerberas coral y rosas rosadas con eucalipto en papel blanco.",
         "categories": [
@@ -134,7 +134,7 @@ const products = [
         "id": 10,
         "code": "010",
         "name": "Tu Nombre en Rosas",
-        "price": 95000,
+        "price": 119000,
         "image": "../assets/10.webp",
         "description": "Ramo redondo de rosas rojas con banda personalizada con el nombre.",
         "categories": [
@@ -150,7 +150,7 @@ const products = [
         "id": 11,
         "code": "011",
         "name": "Atardecer Lavanda",
-        "price": 24000,
+        "price": 30000,
         "image": "../assets/11.webp",
         "description": "Ramo mixto con girasoles, gerberas, rosas, claveles y gypsophila en papel lila.",
         "categories": [
@@ -165,7 +165,7 @@ const products = [
         "id": 12,
         "code": "012",
         "name": "Caja de Ilusiones",
-        "price": 45000,
+        "price": 56000,
         "image": "../assets/12.webp",
         "description": "Arreglo en caja rosada con gerberas, rosas, lilium, claveles y eucalipto.",
         "categories": [
@@ -182,7 +182,7 @@ const products = [
         "id": 13,
         "code": "013",
         "name": "Nube de Durazno",
-        "price": 55000,
+        "price": 69000,
         "image": "../assets/13.webp",
         "description": "Ramo abundante de gerberas durazno, rosas, lilium y claveles en tonos rosados.",
         "categories": [
@@ -197,7 +197,7 @@ const products = [
         "id": 14,
         "code": "014",
         "name": "Corazón de Gerberas",
-        "price": 55000,
+        "price": 69000,
         "image": "../assets/14.webp",
         "description": "Ramo en forma de corazón con gerberas de colores, gypsophila y mariposas doradas.",
         "categories": [
@@ -211,7 +211,7 @@ const products = [
         "id": 15,
         "code": "015",
         "name": "Rayo de Sol",
-        "price": 18000,
+        "price": 23000,
         "image": "../assets/15.webp",
         "description": "Ramo de girasoles con flores fucsia, gypsophila y eucalipto en papel rosado.",
         "categories": [
@@ -224,7 +224,7 @@ const products = [
         "id": 16,
         "code": "016",
         "name": "Trío Dorado",
-        "price": 18000,
+        "price": 23000,
         "image": "../assets/16.webp",
         "description": "Ramo de 3 girasoles con gypsophila, flores fucsia y eucalipto en papel lila.",
         "categories": [
@@ -237,7 +237,7 @@ const products = [
         "id": 17,
         "code": "017",
         "name": "Siete Latidos",
-        "price": 18000,
+        "price": 23000,
         "image": "../assets/17.webp",
         "description": "Ramo de 7 rosas rojas en papel negro con borde dorado.",
         "categories": [
@@ -251,7 +251,7 @@ const products = [
         "id": 18,
         "code": "018",
         "name": "Abrazo Sorpresa",
-        "price": 39500,
+        "price": 49000,
         "image": "../assets/18.webp",
         "description": "Canasta con peluche, rosas fucsia, globo de corazón y globos de estrella.",
         "categories": [
@@ -267,7 +267,7 @@ const products = [
         "id": 19,
         "code": "019",
         "name": "Primavera de Tulipanes",
-        "price": 32000,
+        "price": 40000,
         "image": "../assets/19.webp",
         "description": "Ramo de tulipanes rosados con eucalipto en papel durazno.",
         "categories": [
@@ -280,7 +280,7 @@ const products = [
         "id": 20,
         "code": "020",
         "name": "Rubor de Rosas",
-        "price": 18000,
+        "price": 23000,
         "image": "../assets/20.webp",
         "description": "Ramo de rosas rosadas con gypsophila y helecho en papel blanco con borde dorado.",
         "categories": [
@@ -294,7 +294,7 @@ const products = [
         "id": 21,
         "code": "021",
         "name": "Pasión y Sol",
-        "price": 46000,
+        "price": 58000,
         "image": "../assets/21.webp",
         "description": "Ramo de rosas rojas y girasoles con gypsophila en papel negro con borde dorado.",
         "categories": [
@@ -309,7 +309,7 @@ const products = [
         "id": 22,
         "code": "022",
         "name": "Elegancia Carmesí",
-        "price": 24000,
+        "price": 30000,
         "image": "../assets/22.webp",
         "description": "Ramo de rosas rojas con gypsophila en papel negro y cinta roja.",
         "categories": [
@@ -323,7 +323,7 @@ const products = [
         "id": 23,
         "code": "023",
         "name": "Caricia de Gerberas",
-        "price": 23000,
+        "price": 29000,
         "image": "../assets/23.webp",
         "description": "Ramo de gerberas rosadas, fucsia y crema con gypsophila.",
         "categories": [
@@ -336,21 +336,21 @@ const products = [
         "id": 24,
         "code": "024",
         "name": "Osito de Sol",
-        "price": 26000,
+        "price": 33000,
         "image": "../assets/24.webp",
         "description": "Caja negra con peluche, girasoles y eucalipto.",
         "categories": [
             "especiales",
             "girasoles",
             "peluches",
-            "precio-bajo"
+            "precio-medio"
         ]
     },
     {
         "id": 25,
         "code": "025",
         "name": "Tributo Carmesí",
-        "price": 55000,
+        "price": 69000,
         "image": "../assets/25.webp",
         "description": "Arreglo fúnebre en caja de madera con rosas rojas, gypsophila y follaje.",
         "categories": [
@@ -364,7 +364,7 @@ const products = [
         "id": 26,
         "code": "026",
         "name": "Corazón Eterno",
-        "price": 40000,
+        "price": 50000,
         "image": "../assets/26.webp",
         "description": "Corazón fúnebre de crisantemos blancos con rosas rojas y lilium blanco.",
         "categories": [
@@ -379,7 +379,7 @@ const products = [
         "id": 27,
         "code": "027",
         "name": "Paz Blanca",
-        "price": 50000,
+        "price": 63000,
         "image": "../assets/27.webp",
         "description": "Corona fúnebre de flores blancas con rosas blancas, sobre atril.",
         "categories": [
@@ -394,7 +394,7 @@ const products = [
         "id": 28,
         "code": "028",
         "name": "Memoria Viva",
-        "price": 50000,
+        "price": 63000,
         "image": "../assets/28.webp",
         "description": "Corona fúnebre de claveles rojos, alstroemerias y flores blancas, sobre atril.",
         "categories": [
@@ -408,21 +408,21 @@ const products = [
         "id": 29,
         "code": "029",
         "name": "Corazón de Cumpleaños",
-        "price": 65000,
+        "price": 81000,
         "image": "../assets/29.webp",
         "description": "Ramo en forma de corazón con gerberas de colores y cinta de Feliz Cumpleaños.",
         "categories": [
             "ramos",
             "gerberas",
             "especiales",
-            "precio-medio"
+            "precio-alto"
         ]
     },
     {
         "id": 30,
         "code": "030",
         "name": "Mensaje en Rosas",
-        "price": 40000,
+        "price": 50000,
         "image": "../assets/30.webp",
         "description": "Arreglo en caja de madera con rosas rojas, gypsophila y banda con mensaje personalizado.",
         "categories": [
@@ -436,7 +436,7 @@ const products = [
         "id": 31,
         "code": "031",
         "name": "Sí, Acepto",
-        "price": 45000,
+        "price": 56000,
         "image": "../assets/31.webp",
         "description": "Bouquet de novia con rosas blancas y follaje verde.",
         "categories": [
@@ -452,7 +452,7 @@ const products = [
         "id": 32,
         "code": "032",
         "name": "Romance Silvestre",
-        "price": 40000,
+        "price": 50000,
         "image": "../assets/32.webp",
         "description": "Ramo mixto con gerberas fucsia, rosas, lilium y gypsophila en papel rosado.",
         "categories": [
@@ -467,7 +467,7 @@ const products = [
         "id": 33,
         "code": "033",
         "name": "Gran Declaración",
-        "price": 50000,
+        "price": 63000,
         "image": "../assets/33.webp",
         "description": "Ramo de rosas rojas con eucalipto en papel blanco con borde dorado.",
         "categories": [
@@ -481,7 +481,7 @@ const products = [
         "id": 34,
         "code": "034",
         "name": "Serenidad Blanca",
-        "price": 35000,
+        "price": 44000,
         "image": "../assets/34.webp",
         "description": "Arreglo en caja de madera con rosas, claveles y gerbera blancos con gypsophila.",
         "categories": [
@@ -497,7 +497,7 @@ const products = [
         "id": 35,
         "code": "035",
         "name": "Rubor de Tulipanes",
-        "price": 32000,
+        "price": 40000,
         "image": "../assets/35.webp",
         "description": "Ramo de tulipanes rosados con gypsophila en papel blanco y cinta rosada.",
         "categories": [
@@ -510,7 +510,7 @@ const products = [
         "id": 36,
         "code": "036",
         "name": "Melocotón y Miel",
-        "price": 25000,
+        "price": 31000,
         "image": "../assets/36.webp",
         "description": "Ramo de rosas crema, claveles durazno y gerberas naranjas con eucalipto.",
         "categories": [
@@ -518,27 +518,27 @@ const products = [
             "rosas",
             "gerberas",
             "bouquets",
-            "precio-bajo"
+            "precio-medio"
         ]
     },
     {
         "id": 37,
         "code": "037",
         "name": "Fucsia Radiante",
-        "price": 28000,
+        "price": 35000,
         "image": "../assets/37.webp",
         "description": "Ramo de gerberas fucsia y rosadas con margaritas en papel crema.",
         "categories": [
             "ramos",
             "gerberas",
-            "precio-bajo"
+            "precio-medio"
         ]
     },
     {
         "id": 38,
         "code": "038",
         "name": "Campo de Girasoles",
-        "price": 20000,
+        "price": 25000,
         "image": "../assets/38.webp",
         "description": "Ramo de girasoles con flores lila en papel crema.",
         "categories": [
@@ -551,7 +551,7 @@ const products = [
         "id": 39,
         "code": "039",
         "name": "Oro de Primavera",
-        "price": 48000,
+        "price": 60000,
         "image": "../assets/39.webp",
         "description": "Ramo de rosas amarillas y tulipanes amarillos.",
         "categories": [
@@ -566,7 +566,7 @@ const products = [
         "id": 40,
         "code": "040",
         "name": "Nieve de Tulipanes",
-        "price": 60000,
+        "price": 75000,
         "image": "../assets/40.webp",
         "description": "Ramo de tulipanes blancos con eucalipto atado con cinta plateada.",
         "categories": [
@@ -941,7 +941,7 @@ function initLandingCarousels() {
 
 // --- FUNCIONES DE WHATSAPP CON GOOGLE ADS CONVERSION ---
 function contactWA() {
-    const url = 'https://wa.me/56944357015?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20flores.%20%C2%BFPodr%C3%ADan%20ayudarme%3F';
+    const url = 'https://wa.me/56956832077?text=Hola,%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20flores.%20%C2%BFPodr%C3%ADan%20ayudarme%3F';
     try {
         gtag('event', 'conversion', {
             'send_to': 'AW-18163228199/iTZDCLCAzsocEKe889RD',
@@ -963,7 +963,7 @@ function orderWA(productName, price, code) {
         ? `Hola, quiero cotizar el peluche ${prefix}${productName}. ¿Me das precio y disponibilidad?`
         : `Hola, me interesa ${prefix}${productName} (${formatCLP(value)}). ¿Podrías darme más información?`;
     const encodedMessage = encodeURIComponent(message);
-    const url = `https://wa.me/56944357015?text=${encodedMessage}`;
+    const url = `https://wa.me/56956832077?text=${encodedMessage}`;
     try {
         gtag('event', 'conversion', {
             'send_to': 'AW-18163228199/iTZDCLCAzsocEKe889RD',
